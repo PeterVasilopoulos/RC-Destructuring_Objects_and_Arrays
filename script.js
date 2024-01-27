@@ -175,10 +175,20 @@ const updatedBook = {
 };
 updatedBook;
 
+// Arrow Functions
+
+// function getYear(str) {
+//   return str.split("-")[0];
+// }
+
+const getYear = (str) => str.split("-")[0];
+
+// only need return keyword if the function is longer than 1 line
+
 // Template Literals
 
 const summary = `${title}, a ${pages}-page long book was written by ${author} and published in 
-${publicationDate.split("-")[0]}. The book has ${
+${getYear(publicationDate)}. The book has ${
   hasMovieAdaptation ? "" : "not"
 } been adapted as a movie`;
 summary;
@@ -187,3 +197,5 @@ summary;
 const pagesRange = pages > 1000 ? "over a thousand" : "less than 1000";
 pagesRange;
 console.log(`The book has ${pagesRange} pages`);
+
+console.log(getYear(publicationDate));
