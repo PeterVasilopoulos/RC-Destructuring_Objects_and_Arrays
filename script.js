@@ -224,7 +224,7 @@ spanishTranslation;
 // const count = book.reviews.librarything.reviewsCount ?? "no data";
 // count;
 
-// Optional Chaining
+// Optional Chaining Example
 
 function getTotalReviewCount(book) {
   const goodreads = book.reviews?.goodreads?.reviewsCount;
