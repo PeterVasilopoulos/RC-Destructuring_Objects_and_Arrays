@@ -280,3 +280,16 @@ adventureBooks
 
 const pagesAllBooks = books.reduce((acc, book) => acc + book.pages, 0)
 pagesAllBooks
+
+
+// Array Sort Method
+// sort method changes the original array
+
+const arr = [3,7,1,9,6]
+// before the .sort, put .slice to make a copy of the array to change so the original array remains the same
+const sorted = arr.slice().sort((a,b) => b - a)
+sorted
+arr
+
+const sortedByPages = books.slice().sort((a,b) => a.pages - b.pages)
+sortedByPages
